@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ development ]
+  pull_request:
+    branches: [ development ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: boost
+      run: sudo apt-get update && sudo apt-get install -yq libboost1.71-dev
+    - name: mpfr
+      run: sudo apt-get install -yq libmpfr-dev
+    - name: make
+      run: make
+    - name: archive binary 
+      uses: actions/upload-artifact@v2
+      with:
+         name: build-${{ github.sha }}
+         path: equiv
