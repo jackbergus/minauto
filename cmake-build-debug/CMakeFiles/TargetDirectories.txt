@@ -1,4 +1,0 @@
-/home/giacomo/minauto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/giacomo/minauto/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/giacomo/minauto/cmake-build-debug/CMakeFiles/minauto.dir
-/home/giacomo/minauto/cmake-build-debug/CMakeFiles/equiv.dir
