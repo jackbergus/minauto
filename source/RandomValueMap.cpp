@@ -1,5 +1,5 @@
-#include "Util.hpp"
-#include "RandomValueMap.hpp"
+#include "../include/minauto/Util.hpp"
+#include "../include/minauto/RandomValueMap.hpp"
 
 double RandomValueMap::operator()(int x) {
   double result;

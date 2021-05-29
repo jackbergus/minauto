@@ -4,7 +4,7 @@
 #include <sys/time.h>
 using namespace std;
 
-#include "Timer.hpp"
+#include "../include/minauto/Timer.hpp"
 
 void Error(const char* msg) {
   printf("%s\n",msg);

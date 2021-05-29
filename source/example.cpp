@@ -1,5 +1,5 @@
 #include <iostream>
-#include "mpreal.h"
+#include "../include/minauto/mpreal.h"
 
 using namespace mpfr;
 using namespace std;

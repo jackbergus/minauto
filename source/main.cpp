@@ -1,19 +1,19 @@
-#include "Util.hpp"
-#include "Timer.hpp"
+#include "include/minauto/Util.hpp"
+#include "include/minauto/Timer.hpp"
 
-#include "BLAS.hpp"
-#include "Automaton.hpp"
+#include "include/minauto/BLAS.hpp"
+#include "include/minauto/Automaton.hpp"
 
 //#include "GramSchmidt.hpp"
-#include "WordTree.hpp"
-#include "Worklist.hpp"
-#include "RandomValueMap.hpp"
+#include "include/minauto/WordTree.hpp"
+#include "include/minauto/Worklist.hpp"
+#include "include/minauto/RandomValueMap.hpp"
 
-#include "GramSchmidt.hpp"
-#include "Minimisation.hpp"
-#include "EquivAlgorithms.hpp"
-#include "Inflate.hpp"
-#include "Mutate.hpp"
+#include "include/minauto/GramSchmidt.hpp"
+#include "include/minauto/Minimisation.hpp"
+#include "include/minauto/EquivAlgorithms.hpp"
+#include "include/minauto/Inflate.hpp"
+#include "include/minauto/Mutate.hpp"
 
 #include <ctime>
 

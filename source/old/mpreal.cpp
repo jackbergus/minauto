@@ -57,7 +57,7 @@
 	SUCH DAMAGE.
 */
 #include <cstring>
-#include "mpreal.h"
+#include "../include/minauto/mpreal.h"
 
 #if defined (MPREAL_HAVE_CUSTOM_MPFR_MALLOC)
 #include "dlmalloc.h"

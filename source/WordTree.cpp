@@ -7,7 +7,7 @@ typedef std::list<int> Word;
 
 extern std::vector<std::string> alphabet;
 
-#include "WordTree.hpp"
+#include "../include/minauto/WordTree.hpp"
 
 int WordTree::addNode(int a, int b) {
 	nodes.push_back(Node(a,b));
