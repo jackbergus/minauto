@@ -15,7 +15,7 @@
 #include <boost/numeric/ublas/triangular.hpp> 
 #include <boost/numeric/ublas/lu.hpp>
 
-#include <Util.hpp>
+#include "Util.hpp"
 
 typedef boost::numeric::ublas::compressed_matrix<long double,boost::numeric::ublas::row_major> PrecMatrix;
 

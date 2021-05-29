@@ -1,0 +1,2 @@
+/usr/bin/ar qc libequiv.a  CMakeFiles/equiv.dir/source/BLAS.cpp.o CMakeFiles/equiv.dir/source/Util.cpp.o CMakeFiles/equiv.dir/source/Automaton.cpp.o CMakeFiles/equiv.dir/source/WordTree.cpp.o CMakeFiles/equiv.dir/source/RandomValueMap.cpp.o CMakeFiles/equiv.dir/source/Timer.cpp.o CMakeFiles/equiv.dir/source/dlmalloc.cpp.o
+/usr/bin/ranlib libequiv.a

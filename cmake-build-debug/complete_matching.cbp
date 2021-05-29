@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="complete_matching"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_regex-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_thread-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_atomic-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_date_time-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_wave-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_chrono-1.71.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minauto">
+				<Option output="/home/giacomo/minauto/cmake-build-debug/minauto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_FILESYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_REGEX_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_THREAD_DYN_LINK"/>
+					<Add option="-DBOOST_ATOMIC_DYN_LINK"/>
+					<Add option="-DBOOST_DATE_TIME_DYN_LINK"/>
+					<Add option="-DBOOST_WAVE_DYN_LINK"/>
+					<Add option="-DBOOST_CHRONO_DYN_LINK"/>
+					<Add directory="/home/giacomo/minauto/include/minauto"/>
+					<Add directory="/home/giacomo/minauto/submodules/mpreal"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 minauto"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minauto/fast">
+				<Option output="/home/giacomo/minauto/cmake-build-debug/minauto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_FILESYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_REGEX_DYN_LINK"/>
+					<Add option="-DBOOST_SYSTEM_DYN_LINK"/>
+					<Add option="-DBOOST_THREAD_DYN_LINK"/>
+					<Add option="-DBOOST_ATOMIC_DYN_LINK"/>
+					<Add option="-DBOOST_DATE_TIME_DYN_LINK"/>
+					<Add option="-DBOOST_WAVE_DYN_LINK"/>
+					<Add option="-DBOOST_CHRONO_DYN_LINK"/>
+					<Add directory="/home/giacomo/minauto/include/minauto"/>
+					<Add directory="/home/giacomo/minauto/submodules/mpreal"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 minauto/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="equiv">
+				<Option output="/home/giacomo/minauto/cmake-build-debug/libequiv.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giacomo/minauto/include/minauto"/>
+					<Add directory="/home/giacomo/minauto/submodules/mpreal"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 equiv"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="equiv/fast">
+				<Option output="/home/giacomo/minauto/cmake-build-debug/libequiv.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/giacomo/minauto/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/giacomo/minauto/include/minauto"/>
+					<Add directory="/home/giacomo/minauto/submodules/mpreal"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 equiv/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/giacomo/minauto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/giacomo/minauto/source/Automaton.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/BLAS.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/RandomValueMap.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/Timer.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/Util.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/WordTree.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/dlmalloc.cpp">
+			<Option target="equiv"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/source/main.cpp">
+			<Option target="minauto"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.71.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/boost_filesystem-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/boost_filesystem-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/libboost_filesystem-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/libboost_filesystem-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0/boost_regex-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_regex-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0/boost_regex-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_regex-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0/libboost_regex-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_regex-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_regex-1.71.0/libboost_regex-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_regex-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/boost_system-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/boost_system-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/libboost_system-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/libboost_system-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0/boost_thread-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_thread-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0/boost_thread-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_thread-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0/libboost_thread-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_thread-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0/libboost_thread-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_thread-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0/boost_atomic-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_atomic-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0/boost_atomic-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_atomic-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0/libboost_atomic-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_atomic-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_atomic-1.71.0/libboost_atomic-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_atomic-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0/boost_date_time-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_date_time-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0/boost_date_time-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_date_time-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0/libboost_date_time-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_date_time-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.71.0/libboost_date_time-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_date_time-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_wave-1.71.0/boost_wave-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_wave-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_wave-1.71.0/boost_wave-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_wave-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_wave-1.71.0/libboost_wave-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_wave-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_wave-1.71.0/libboost_wave-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_wave-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0/boost_chrono-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_chrono-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0/boost_chrono-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_chrono-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0/libboost_chrono-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_chrono-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/giacomo/minauto/../../../usr/lib/x86_64-linux-gnu/cmake/boost_chrono-1.71.0/libboost_chrono-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_chrono-1.71.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

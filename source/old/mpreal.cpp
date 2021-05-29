@@ -57,7 +57,7 @@
 	SUCH DAMAGE.
 */
 #include <cstring>
-#include "../include/minauto/mpreal.h"
+#include "mpreal.h"
 
 #if defined (MPREAL_HAVE_CUSTOM_MPFR_MALLOC)
 #include "dlmalloc.h"
@@ -332,9 +332,9 @@ const mpreal fma (const mpreal& v1, const mpreal& v2, const mpreal& v3, mp_rnd_t
 	mpreal a;
 	mp_prec_t p1, p2, p3;
 
-	p1 = v1.get_prec(); 
-	p2 = v2.get_prec(); 
-	p3 = v3.get_prec(); 
+	p1 = v1.get_prec();
+	p2 = v2.get_prec();
+	p3 = v3.get_prec();
 
 	a.set_prec(p3>p2?(p3>p1?p3:p1):(p2>p1?p2:p1));
 
@@ -347,9 +347,9 @@ const mpreal fms (const mpreal& v1, const mpreal& v2, const mpreal& v3, mp_rnd_t
 	mpreal a;
 	mp_prec_t p1, p2, p3;
 
-	p1 = v1.get_prec(); 
-	p2 = v2.get_prec(); 
-	p3 = v3.get_prec(); 
+	p1 = v1.get_prec();
+	p2 = v2.get_prec();
+	p3 = v3.get_prec();
 
 	a.set_prec(p3>p2?(p3>p1?p3:p1):(p2>p1?p2:p1));
 
@@ -362,8 +362,8 @@ const mpreal agm (const mpreal& v1, const mpreal& v2, mp_rnd_t rnd_mode)
 	mpreal a;
 	mp_prec_t p1, p2;
 
-	p1 = v1.get_prec(); 
-	p2 = v2.get_prec(); 
+	p1 = v1.get_prec();
+	p2 = v2.get_prec();
 
 	a.set_prec(p1>p2?p1:p2);
 
@@ -390,8 +390,8 @@ const mpreal remquo (long* q, const mpreal& x, const mpreal& y, mp_rnd_t rnd_mod
 	mpreal a;
 	mp_prec_t yp, xp;
 
-	yp = y.get_prec(); 
-	xp = x.get_prec(); 
+	yp = y.get_prec();
+	xp = x.get_prec();
 
 	a.set_prec(yp>xp?yp:xp);
 

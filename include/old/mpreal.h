@@ -385,7 +385,20 @@ public:
 	friend const mpreal bessely0 (const mpreal& v, mp_rnd_t rnd_mode = mpreal::default_rnd);
 	friend const mpreal bessely1 (const mpreal& v, mp_rnd_t rnd_mode = mpreal::default_rnd);
 	friend const mpreal besselyn (long n, const mpreal& v, mp_rnd_t rnd_mode = mpreal::default_rnd); 
-	friend const mpreal fma (const mpreal& v1, const mpreal& v2, const mpreal& v3, mp_rnd_t rnd_mode = mpreal::default_rnd);
+	friend const mpreal fma (const mpreal& v1, const mpreal& v2, const mpreal& v3, mp_rnd_t rnd_mode = mpreal::default_rnd)
+        {
+            mpreal a;
+            mp_prec_t p1, p2, p3;
+
+            p1 = v1.get_prec();
+            p2 = v2.get_prec();
+            p3 = v3.get_prec();
+
+            a.set_prec(p3>p2?(p3>p1?p3:p1):(p2>p1?p2:p1));
+
+            mpfr_fma(a.mp,v1.mp,v2.mp,v3.mp,rnd_mode);
+            return a;
+        }
 	friend const mpreal fms (const mpreal& v1, const mpreal& v2, const mpreal& v3, mp_rnd_t rnd_mode = mpreal::default_rnd);
 	friend const mpreal agm (const mpreal& v1, const mpreal& v2, mp_rnd_t rnd_mode = mpreal::default_rnd);
 	friend const mpreal sum (const mpreal tab[], unsigned long int n, mp_rnd_t rnd_mode = mpreal::default_rnd);

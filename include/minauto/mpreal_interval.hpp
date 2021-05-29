@@ -70,9 +70,9 @@ namespace boost {
 	  static T int_up  (const T& a)      { return rint_ceil(a,MPFR_RNDU); }
 	  // conversion functions
 	  template<typename U>
-	  T conv_down(const U& u)     { return T(u,mpfr::mpreal::default_prec,MPFR_RNDD); }
+	  T conv_down(const U& u)     { return T(u,mpfr::mpreal::get_default_prec(),MPFR_RNDD); }
 	  template<typename U>
-	  T conv_up  (const U& u)     { return T(u,mpfr::mpreal::default_prec,MPFR_RNDU); }
+	  T conv_up  (const U& u)     { return T(u,mpfr::mpreal::get_default_prec(),MPFR_RNDU); }
 	  // unprotected rounding class
 	  typedef rounded_math<mpfr::mpreal> unprotected_rounding;
 	};
@@ -114,22 +114,22 @@ namespace boost {
 
 	namespace constants {
 		template<> inline mpfr::mpreal pi_half_lower<mpfr::mpreal>() {
-			return mpfr::const_pi (mpfr::mpreal::default_prec, MPFR_RNDD)  / 2.0;
+			return mpfr::const_pi (mpfr::mpreal::get_default_prec(), MPFR_RNDD)  / 2.0;
 		}
 		template<> inline mpfr::mpreal pi_half_upper<mpfr::mpreal>() {
-			return mpfr::const_pi (mpfr::mpreal::default_prec, MPFR_RNDU)  / 2.0;
+			return mpfr::const_pi (mpfr::mpreal::get_default_prec(), MPFR_RNDU)  / 2.0;
 		}
 		template<> inline mpfr::mpreal pi_lower<mpfr::mpreal>() {
-			return mpfr::const_pi (mpfr::mpreal::default_prec, MPFR_RNDD);
+			return mpfr::const_pi (mpfr::mpreal::get_default_prec(), MPFR_RNDD);
 		}
 		template<> inline mpfr::mpreal pi_upper<mpfr::mpreal>() {
-			return mpfr::const_pi (mpfr::mpreal::default_prec, MPFR_RNDU);
+			return mpfr::const_pi (mpfr::mpreal::get_default_prec(), MPFR_RNDU);
 		}
 		template<> inline mpfr::mpreal pi_twice_lower<mpfr::mpreal>() {
-			return mpfr::const_pi (mpfr::mpreal::default_prec, MPFR_RNDD)  * 2.0;
+			return mpfr::const_pi (mpfr::mpreal::get_default_prec(), MPFR_RNDD)  * 2.0;
 		}
 		template<> inline mpfr::mpreal pi_twice_upper<mpfr::mpreal>() {
-			return mpfr::const_pi (mpfr::mpreal::default_prec, MPFR_RNDU)  * 2.0;
+			return mpfr::const_pi (mpfr::mpreal::get_default_prec(), MPFR_RNDU)  * 2.0;
 		}
 	}
 	}
