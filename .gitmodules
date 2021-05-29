@@ -1,3 +1,9 @@
 [submodule "submodules/mpreal"]
 	path = submodules/mpreal
 	url = https://github.com/jackbergus/mpreal
+[submodule "submodules/ublas"]
+	path = submodules/ublas
+	url = https://github.com/boostorg/ublas
+[submodule "submodules/boost_core"]
+	path = submodules/boost_core
+	url = https://github.com/boostorg/core
