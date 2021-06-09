@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(complete_matching)
+project(minauto)
 
 set(CMAKE_CXX_STANDARD 20)
 
