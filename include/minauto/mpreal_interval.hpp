@@ -19,8 +19,8 @@ namespace boost {
 	template<> class rounded_math<mpfr::mpreal> {
 	public:
 	  // default constructor, destructor
-	  rounded_math<mpfr::mpreal>() {}
-	  ~rounded_math<mpfr::mpreal>() {}
+	  rounded_math() {}
+	  ~rounded_math() {}
 
 	  const static mp_rnd_t up = MPFR_RNDU;
 	  const static mp_rnd_t down = MPFR_RNDD;

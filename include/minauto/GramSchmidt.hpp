@@ -1,6 +1,10 @@
 #ifndef GRAMSCHMIDT
 #define GRAMSCHMIDT
 
+#include <Automaton.hpp>
+#include "Util.hpp"
+#include "Timer.hpp"
+
 template<typename Automaton>
 class GramSchmidt {
 public:

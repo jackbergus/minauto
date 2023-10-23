@@ -1,8 +1,16 @@
 #ifndef AUTOMATON
 #define AUTOMATON
 
+#include <list>
+#include <string>
+#include <unordered_map>
+#include <vector>
+#include <fstream>
+#include "Util.hpp"
+#include <BLAS.hpp>
 
-
+#include <boost/numeric/ublas/vector_proxy.hpp>
+#include <boost/numeric/ublas/vector.hpp>
 
 /* global alphabet table for both automata */
 extern std::unordered_map<std::string,int> alphabet_table;

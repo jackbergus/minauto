@@ -1,6 +1,7 @@
 #ifndef WORDTREE
 #define WORDTREE
 
+#include "Automaton.hpp"
 
 extern std::vector<std::string> alphabet;
 

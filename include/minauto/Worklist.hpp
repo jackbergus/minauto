@@ -1,6 +1,8 @@
 #ifndef WORKLIST
 #define WORKLIST
 
+#include <list>
+
 /*
   - a pair of distributions and a word
  */

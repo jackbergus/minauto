@@ -1,6 +1,8 @@
 #ifndef MINIMISATION
 #define MINIMISATION
 
+#include <BLAS.hpp>
+
 struct MinimisationSettings {
 
   MinimisationSettings () : method (arnoldi), direction(both), prec(false), dense(false) {}
